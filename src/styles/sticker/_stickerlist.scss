@@ -1,0 +1,231 @@
+@use '../variables/colors';
+
+#stickerlist {
+    overflow-x: hidden;
+}
+
+.container.container__stickerlist {
+    width: 80%;
+}
+
+.stickertitle {
+    &__title {
+        margin-top: 6%;
+
+        @media (max-width: 767px) {
+            margin-top: 25%;
+        }
+
+    h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 72px;
+        color: colors.$mainText;
+        position: relative;
+
+        @media (max-width: 767px) {
+            font-size: 44px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 74px;
+            margin-bottom: 36px;
+            margin-top: 90px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 44%;
+            left: 20%;
+            right: 0;
+            height: 0.5em;
+            border-top: 4px solid colors.$mainText;
+            z-index: -1;
+
+            @media (max-width: 767px) {
+                left: 50%;
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                left: 40%;
+            }
+            }
+        }
+    }
+}
+
+.stickerlist {
+    &__list {
+        @media (max-width: 767px) {
+            margin-left: 25%;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            margin-left: 8%;
+        }
+
+        .row {
+        gap: 124px;
+        text-align: center;
+        margin-left: 4%;
+        margin-bottom: 5%;
+        
+        @media (max-width: 767px) {
+            gap: 100%;
+            margin-left: 23%;
+            }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            margin-left: 5%;
+            gap: 35%;
+            }
+        }
+
+        .col-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                text-align: center;
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 12px;
+
+                @media (max-width: 767px) {
+                    text-align: center;
+                    width: 200px;
+                }
+        
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    text-align: center;
+                    width: 200px;
+                }
+            }
+
+            img {
+            @media (max-width: 767px) {
+                width: 200px;
+            }
+
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        .budget-button {
+            top: 20px;
+            @media (max-width: 767px) {
+                top: 12px;
+            }
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 30px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                margin-top: 30px;
+            }
+
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 16px;
+
+            @media (max-width: 767px) {
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+
+        img {
+            margin-top: 4px;
+            margin-bottom: 30px;
+
+            @media (max-width: 767px) {
+                display: flex;
+                margin-left: 17%;
+                margin-top: 30px;
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+                margin-left: 0;
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin-right: 40px;
+            @media (max-width: 767px) {
+                padding: 0;
+                margin-left: 32px;
+            }
+        }
+
+        .item-price {
+            margin-top: 20px;
+            font-size: 62px;
+            margin-bottom: 10px;
+
+            @media (max-width: 767px) {
+                font-size: 38px;
+                margin-top: 4px;
+            }
+        }
+
+            &__a4-sticker,
+            &__cut-sticker,
+            &__lg-sticker,
+            &__vehicle-sticker,
+            &__perf-sticker,
+            &__fridge-sticker{
+            position: fixed;
+            top: 3vh;
+            padding: 36px 48px;
+            display: none;
+            text-align: center;
+            background-color: colors.$secText;
+            border-radius: 20px;
+            box-shadow: 0 1px 120px 2px colors.$mainText;
+            z-index: 1;
+
+            @media (max-width: 767px) {
+                padding: 10px 0;
+                top: 6vh;
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+                top: 8vh;
+            }
+        }
+    }
+}
+
+.close-btn-1,
+.close-btn-2,
+.close-btn-3,
+.close-btn-4,
+.close-btn-5,
+.close-btn-6 {
+    position: absolute;
+    top: 28px;
+    font-size: 32px;
+    background: none;
+    outline: none;
+    border: none;
+
+    @media (max-width: 767px) {
+        font-size: 28px;
+        left: 14px;
+        top: 8px;
+    }
+
+    &:hover {
+        color: #c00404;
+    }
+}

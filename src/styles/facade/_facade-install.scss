@@ -1,0 +1,66 @@
+#facadeinstall {
+    padding-bottom: 64px;
+}
+
+.facadeinstall {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 64px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 90%;
+    }
+
+    &__text {
+        display: block;
+        text-align: end;
+    }
+
+    &__title {
+        h2 {
+            font-size: 36px;
+            margin-top: 48px;
+            margin-bottom: 18px;
+
+            @media (max-width: 767px) {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    &__subtitle {
+        p {
+            font-size: 22px;
+            line-height: 24px;
+            width: 500px;
+
+            @media (max-width: 767px) {
+                width: 180px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 100%;
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: start;
+        img {
+        width: 55%;
+        transform: scaleX(-1);
+
+        @media (max-width: 767px) {
+            width: 80%;
+        }
+        }
+    }
+}

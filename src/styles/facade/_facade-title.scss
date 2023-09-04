@@ -1,0 +1,123 @@
+@use "../variables/colors";
+
+.facadetitle {
+    position: relative;
+    margin-top: 5%;
+    @media (max-width: 767px) {
+        margin-top: 18%;
+        overflow-x: hidden;
+    }
+    &__title {
+
+h1 {
+    margin: 0 auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    color: colors.$mainText;
+    position: relative;
+
+    @media (max-width: 767px) {
+        font-size: 44px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 74px;
+        margin-bottom: 36px;
+        margin-top: 90px;
+        width: 90%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 44%;
+        left: 20%;
+        right: 0;
+        height: 0.5em;
+        border-top: 4px solid colors.$mainText;
+        z-index: -1;
+
+        @media (max-width: 767px) {
+            left: 50%;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            left: 40%;
+                }
+            }
+        }
+    }
+
+    &__carousel {
+        position: relative;
+
+        .carousel {
+            &-inner {
+            display: flex;
+            text-align: center;
+            width: 100%;
+            @media (max-width: 767px) {
+                width: 150%;
+                margin-left: -80px;
+            }
+        }
+
+                &-item {
+                    position: relative;
+                    img {
+                min-width: 100%;
+
+                @media (max-width: 1600px) {
+                max-width: 90%;
+                    }
+                }
+            }
+
+            }
+        .fa-chevron-left,
+        .fa-chevron-right {
+            font-size: 36px;
+            color: colors.$secText;
+            opacity: 70%;
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
+            
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            transition: all ease .2s;
+            
+            @media (min-width: 1024px) {
+                &:hover {
+                    color: colors.$mainText;
+                }
+            }
+        }
+            p {
+                position: absolute;
+                width: 50%;
+                left: 25%;
+                bottom: 1%;
+                z-index: 1;
+                font-size: 32px;
+                text-align: center;
+                color: colors.$secText;
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                    width: 100%;
+                    left: 1%;
+                    bottom: -2px;
+                }
+
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    font-size: 20px;
+                    width: 80%;
+                    left: 12%;
+                }
+            }
+        }
+    }

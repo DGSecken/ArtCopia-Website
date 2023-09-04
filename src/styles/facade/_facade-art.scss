@@ -1,0 +1,57 @@
+@use '../variables/colors';
+
+.facadeart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 64px;
+
+    @media (max-width: 767px) {
+        width: 90%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 90%;
+    }
+
+    &__text {
+        display: block;
+    }
+    &__title {
+        h2 {
+            font-size: 36px;
+            margin-top: 48px;
+            margin-bottom: 18px;
+
+            @media (max-width: 767px) {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    &__subtitle {
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            width: 130%;
+            @media (max-width: 767px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                font-size: 24px;
+                line-height: 28px;
+                width: 85%;
+            }
+        }
+    }
+    &__img {
+        display: flex;
+        justify-content: end;
+        img {
+            width: 60%;
+        }
+    }
+}

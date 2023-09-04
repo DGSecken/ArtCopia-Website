@@ -1,0 +1,63 @@
+@use '../variables/colors';
+
+#navbar {
+    background-color: grayscale($color: #333333);
+    padding: 16px;
+}
+
+.container__navbar {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.navbar {
+    &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 1024px) {
+        display: none;
+        text-align: center;
+        margin-left: 24px;
+    }
+    
+}
+
+    &__items {
+    margin-right: 20px;
+    list-style: none;
+
+    @media (max-width: 767px) {
+        margin-top: 8px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+
+    a {
+        color: colors.$secText;
+        text-decoration: none;
+        transition: ease all .2s;
+        background-color: transparent;
+        padding: 8px;
+        border-radius: 4px;
+        &:hover {
+            color: colors.$mainText;
+            background-color: colors.$mainBg;
+            }
+        }
+    }
+}
+
+.dropdown-btn {
+    display: flex;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}

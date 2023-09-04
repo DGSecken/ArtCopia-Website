@@ -1,0 +1,114 @@
+@use '../variables/colors';
+
+
+#facadebuy {
+    background-color: colors.$scndBgColor;
+    padding-top: 22px;
+    padding-bottom: 128px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 48px;
+    }
+
+}
+.facadebuy {
+    &__title {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: bold;
+            @media (max-width: 767px) {
+                font-size: 24px;
+            }
+        }
+    }
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        p {
+            font-size: 22px;
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__needs {
+        margin: 0 auto;
+        margin-top: 28px;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 85%;
+            margin-top: 8px;
+        }
+        .col-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+        }
+        .col-tilted {
+            padding-top: 40px;
+        }
+    }
+    &__needs__responsive {
+        display: none;
+        @media (max-width: 767px) {
+            display: block;
+        }
+        img {
+            display: flex;
+            margin: 0 auto;
+            width: 60%;
+            margin-bottom: 36px;
+        }
+    }
+    .wpp-button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+        
+        @media (max-width: 767px) {
+            margin-top: 32px;
+        }
+
+        a {
+            width: 85%;
+            text-align: center;
+            line-height: 104px;
+            font-size: 78px;
+            border-radius: 42px;
+
+            @media (max-width: 767px) {
+                font-size: 32px;
+                line-height: 48px;
+                width: 100%;
+            }
+        }
+        img {
+                position: absolute;
+                display: flex;
+                left: 6%;
+                margin-top: -8px;
+                width: 132px;
+                z-index: 1;
+                pointer-events: none;
+
+                @media (max-width: 1024px) {
+                    display: none;
+                    }
+                }
+    }
+}

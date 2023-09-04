@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+<link rel="stylesheet" href="styles/main.scss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<title>ArtCópia</title>
+</head>
+<body>
+    
+<header id="header">
+    <div class="container container__header">
+        <div class="header__logo">
+            <img src="../assets/logo.png" alt="">
+            <p>| COMUNICAÇÃO EM FORMA DE ARTE</p>
+        </div>
+            <div class="header__number">
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <p>(14) 99633-4900</p>
+            </div>
+            <div class="header__mobile-dropdown">
+                <button type="button" class="dropdown-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section id="navbar">
+        <div class="container container__navbar">
+            <nav>
+                <ul class="navbar__list">
+                    <li class="navbar__items">
+                        <a href="./banner.html">BANNERS</a>
+                    </li>
+                    <li class="navbar__items">
+                        <a href="./sticker.html">ADESIVOS</a>
+                    </li>
+                    <li class="navbar__items">
+                        <a href="./facade.html">FACHADAS</a>
+                    </li>
+                    <li class="navbar__items">
+                        <a href="./cards.html">CARTÕES</a>
+                    </li>
+                    <li class="navbar__items">
+                        <a href="#location">SERVIÇOS LOCAIS</a>
+                    </li>
+                </ul>
+            </nav>
+    </section>
+
+    <section id="carousel">
+        <div id="carousel-inside" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="/assets/carousel/carousel-1.jpg" alt="">
+                </div>
+                <div data-bs-interval="6000" class="carousel-item">
+                    <img src="/assets/carousel/carousel-2.png" alt="">
+                </div>
+                <div data-bs-interval="6000" class="carousel-item">
+                    <img src="https://via.placeholder.com/1400x350" alt="">
+                </div>
+                <div data-bs-interval="6000" class="carousel-item">
+                    <img src="https://via.placeholder.com/1400x350" alt="">
+                </div>
+            </div>
+
+            <button data-bs-target="#carousel-inside" class="carousel-control-prev" data-bs-slide="prev" type="button">
+                <span><i class="fa-solid fa-chevron-left"></i></span>
+            </button>
+
+            <button data-bs-target="#carousel-inside" class="carousel-control-next" data-bs-slide="next" type="button">
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+            </button>
+
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container container__services">
+            <div class="services__title">
+                <h1>SERVIÇOS</h1>
+            </div>
+
+            <div class="services__ex">
+                <div class="row">
+                    <div class="col-3">
+                        <a class="services__item" href="./banner.html"><img src="/assets/services/1.png" alt=""></a>
+                        <div class="services__info">
+                        <h1>BANNERS</h1>
+                        <p>Ver mais</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <a class="services__item" href="./sticker.html"><img src="/assets/services/2.png" alt=""></a>
+                        <div class="services__info">
+                        <h1>ADESIVOS</h1>
+                        <p>Ver mais</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <a class="services__item" href="./cards.html"><img src="/assets/services/3.png" alt=""></a>
+                        <div class="services__info">
+                        <h1>CARTÕES</h1>
+                        <p>Ver mais</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <a class="services__item" href="./facade.html"><img src="/assets/services/4.png" alt=""></a>
+                        <div class="services__info services__info__facade">
+                            <h1>FACHADAS</h1>
+                            <p>Ver mais</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services__mobile-ex">
+                <div class="services__mobile-ex__item">
+                    <div class="services__mobile-ex__item__desc">
+                        <a href="./banner.html">
+                            <img src="/assets/services/1.png" alt="">
+                            <h1>Banners</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__mobile-ex__item">
+                    <div class="services__mobile-ex__item__desc">
+                        <a href="./sticker.html">
+                            <img src="/assets/services/2.png" alt="">
+                            <h1>Adesivos</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__mobile-ex__item">
+                    <div class="services__mobile-ex__item__desc">
+                        <a href="./cards.html">
+                            <img src="/assets/services/3.png" alt="">
+                            <h1>Cartões</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__mobile-ex__item">
+                    <div class="services__mobile-ex__item__desc">
+                        <a href="./facade.html">
+                            <img src="/assets/services/4.png" alt="">
+                            <h1>Fachadas</h1>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container container__contact">
+            <div class="contact__title">
+                <h1>ATENDIMENTO</h1>
+            </div>
+            <div class="contact__card">
+                
+                <div class="contact__info">
+                    <div class="contact__text">
+                    <p>Faça seu <b>pedido</b> ou <b>orçamento</b> conosco através do nosso <span>Whatsapp</span>!</p>
+                    <p>Teremos o maior prazer em lhe ajudar a ter o melhor visual que você ou seu negócio poderá ter e vê-lo crescer com a melhor cara possível!</p>
+                </div>
+
+                        <div class="contact__img">
+                            <img src="/assets/sac.png" alt="">
+                        </div>
+                    </div>
+                <div class="contact__button">
+                    <img src="/assets/whatsapp-logo.png" alt="">
+                <a href="#">FAÇA SEU PEDIDO</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="location"> 
+        <div class="container container__location">
+            <div class="location__text">
+                <h1>CHEGUE ATÉ NÓS</h1>
+            </div>
+            <div class="location__local-services">
+                <div class="location__local-services__list">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-print"></i>
+                            Impressões
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-file"></i>
+                            Plastificação de documentos
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-image"></i>
+                            Revelação de fotos 
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-book-open"></i>
+                            Encadernação
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-square-plus"></i>
+                            Muito mais com altíssima qualidade
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="location__local-services__img">
+                    <img src="/assets/location/icon.png" alt="">
+                </div>
+                
+            </div> 
+
+            <h3>Você só encontra no <b>estabelecimento ArtCópia!</b></h3>
+
+            <div class="location__gps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.919964617894!2d-49.51431302467503!3d-23.391112478917112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c1a5a76dd397e1%3A0x727ccb4babbc2cc8!2sGR%C3%81FICA%20ART%20COPIA%20COMUNICA%C3%87%C3%83O%20VISUAL!5e0!3m2!1spt-BR!2sbr!4v1692657266173!5m2!1spt-BR!2sbr" width="1100" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="location__address">
+                <p><i class="fa-solid fa-location-dot"></i>R. Anacleto Gonçalves Neves, 68 - Centro, Fartura - SP, 18870-000</p>
+                <p><i class="fa-regular fa-clock"></i>Aberto de Segunda a Sexta - dás <b>08:00</b> às <b>18:00</b></p>
+            </div>
+    </section>
+
+    <section id="questions">
+        <div class="container container__questions">
+            <div class="questions__text">
+                    <h1>PERGUNTAS FREQUENTES</h1>
+                </div> 
+            </div>
+    
+            <!-- These are out from the main container propositally -->
+            <div class="questions__card">
+                <div class="questionbtn">
+                    <button type="button" class="question1"><img src="/assets/questions/colorless1.jpg" alt=""></button>
+                    <div class="questionbtn__cardtext">
+                        <h1>COMO ENVIAR MEU ARQUIVO?</h1>
+                    </div>
+                </div>
+
+                <div class="questionbtn">
+                    <button type="button" class="question2"><img src="/assets/questions/colorless2.jpg" alt=""></button>
+                    <div class="questionbtn__cardtext">
+                        <h1> SOBRE PRAZO DE ENTREGA</h1>
+                    </div>
+                </div>
+
+                <div class="questionbtn">
+                    <button type="button" class="question3"><img src="/assets/questions/colorless3.jpg" alt=""></button>
+                    <div class="questionbtn__cardtext">
+                        <h1>MÉTODOS DE PAGAMENTO ACEITOS</h1>
+                    </div>
+                </div>
+
+                <div class="questions__box-1">
+                    <button class="close-btn-1" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+                    <h1>COMO ENVIAR A ARTE PARA MEU PRODUTO?</h1>
+                    <img src="/assets/questions/question1-img.png" alt="">
+                    <p>Para que sua arte saia com o máximo de qualidade possível (caso não seja nós a fazê-la), precisamos que o arquivo da sua arte seja enviado em um tamanho aceitável para o comprimento do produto, caso contrário a qualidade será comprometida.</p>
+                    <p>• Caso o arquivo seja enviado via imagem no WhatsApp, utilize a opção "Enviar documento" ao invés de "Fotos e vídeos", dessa maneira, o Whatsapp não comprometerá a qualidade da imagem.</p>
+                    <p>• Caso o arquivo seja feito pelo aplicativo Canva, nos envie o link de edição da imagem, para que assim nós possamos baixar com a qualidade necessária para o produto.</p>
+                    <p>Formatos aceitos: <b>PDF, PNG, JPG, CDR, PSD, EPS, AI.</b></p>
+                </div>
+                <div class="questions__box-2">
+                    <button class="close-btn-2" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+                    <h1>SOBRE PRAZO DE ENTREGA</h1>
+                    <img src="/assets/questions/question2-img.png" alt="">
+                    <p>O prazo de entrega dos produtos varia de item para item, e os mesmos podem ser consultados nas páginas de compra de cada um.</p>
+                    <p>O prazo é válido a partir do momento que a arte é <b>confirmada</b> pelo cliente, assim dando início ao processo de produção.</p>
+                    <p>Cada prazo é cuidadosamente aplicado para que a produção ofereça a maior qualidade e a maior satisfação com o produto final por parte do cliente.</p>
+                    <p>Devido ao não funcionamento aos sábados, domingos e feriados, esses não serão contados como dias úteis</p>
+                </div>
+                <div class="questions__box-3">
+                    <button class="close-btn-3" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+                    <h1>MÉTODOS DE PAGAMENTO ACEITOS</h1>
+                    <img src="/assets/questions/question3-img.png" alt="">
+                    <p>Métodos de pagamento aceitos: <b>Dinheiro, cartão de crédito/débito e PIX.</b></p>
+                    <p>Para os métodos de cartão, nós parcelamos todos os produtos em 12x com juros.</p>
+                    <p><b>OBS:</b> Devido a problemas com a falta de pagamento dos produtos, nós requisitamos o pagamento de <b>metade do valor antecipado à produção do item comprado</b>, assim, finalizando o pagamento na retirada do produto na gráfica/na instalação.</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="socials">
+        <div class="container container__socials">
+            <div class="socials__title">
+                <h1>CONECTE-SE CONOSCO</h1>
+            </div>
+            <div class="socials__text">
+                <p>Conecte-se com a gente através das nossas redes sociais!</p>
+                <div class="socials__links">
+                    <a href="https://www.instagram.com/artcopia/"target="_blank" class="ig-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ARTCOPIAFARTURA"target="_blank" class="fb-link"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+    </section>
+    
+    <footer id="footer">
+
+        <div class="container footer-logo">
+            <img src="/assets/logo.png" alt="">
+        </div>
+
+        <div class=" container container__footer">
+            <div class="footer__socials">
+                <p><b>Contato</b></p>
+                <div class="footer__socials__logo">
+                    <a href="https://www.facebook.com/ARTCOPIAFARTURA" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/artcopia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <p class="address">Rua Anacleto Gonçalves Neves, 68 - Centro, Fartura - SP</p>
+                <p>(14) 99633-4900</p>
+                <p>artcopiafartura@gmail.com</p>
+            </div>
+            <div class="footer__contact">
+                <p><b>Horário de atendimento</b></p>
+                <p><b>Whatsapp e Atendimento local:</b> Segunda a sexta das 08:00 às 18:00</p>
+                <p>Sábado e domingo: Fechados</p>
+                <p>Feriados: Fechados</p>
+            </div>
+            <div class="footer__payment">
+                <p><b>Métodos de pagamento</b></p>
+                <p>PIX</p>
+                <p>Crédito & débito</p>
+            </div>
+            <div class="footer__copy">
+                <p>&copy 2023 - ArtCópia. Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="/lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/88255baf46.js" crossorigin="anonymous"></script>
+</body>
+</html>

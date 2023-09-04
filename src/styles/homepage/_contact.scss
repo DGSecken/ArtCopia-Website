@@ -1,0 +1,141 @@
+@use '../variables/colors';
+
+#contact {
+    padding: 48px;
+    background-color: colors.$scndBgColor;
+}
+
+.container__contact {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.contact {
+    &__title {
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 72px;
+            color: colors.$mainText;
+            position: relative;
+
+            @media (max-width: 767px) {
+                font-size: 36px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 44%;
+                left: 28%;
+                right: 0;
+                height: 0.5em;
+                border-top: 4px solid colors.$mainText;
+                z-index: 1;
+                @media (max-width: 767px) {
+                    left: 63%;
+                    }
+                
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    left: 48%;
+                    }
+            }
+
+        }
+    }
+    
+    &__button {
+        text-align: center;
+        margin-top: 30px;
+        @media (max-width: 767px) {
+            margin-top: 18px;
+        }
+
+        a {
+            position: relative;
+            color: colors.$mainText;
+            padding: 4px 250px;
+            margin-right: 30px;
+            font-size: 80px;
+            font-family: 'Bebas Neue', sans-serif;
+            text-decoration: none;
+            background-color: colors.$mainBg;
+            transition: all ease .3s;
+            border-radius: 52px;
+
+            &:hover {
+                background: #25D366;
+                color: colors.$secText;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 34px;
+                    padding: 8px 40px;
+                    margin: 0;
+                    border-radius: 20px;
+                    }
+                    @media (min-width: 768px) and (max-width: 1024px) {
+                        font-size: 48px;
+                        padding: 8px 120px;
+                        margin-right: 12px;
+                        }
+            }
+            
+            img {
+                position: absolute;
+                display: flex;
+                margin-top: -6px;
+                margin-left: 80px;
+                width: 132px;
+                z-index: 1;
+                pointer-events: none;
+
+                @media (max-width: 1024px) {
+                    display: none;
+                    }
+                }
+        }
+        &__info {
+            display: flex;
+            align-items: center;
+            font-size: 32px;
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                }
+        }
+        &__text {
+            width: 80%;
+            line-height: 50px;
+            margin-right: 80px;
+            padding-left: 8px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+                width: 120%;
+                margin-right: 0;
+                }
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    font-size: 26px;
+                    line-height: 42px;
+                    text-align: center;
+                    margin-left: 62px;
+                    }
+        }
+        &__img {
+            img {
+                width: 95%;
+                margin-left: 10%;
+        }
+        @media (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+            }
+            @media (min-width: 768px) and (max-width: 1024px) { 
+                width: 50%;
+                }
+            
+    }
+}
+
+
