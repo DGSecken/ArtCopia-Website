@@ -2,9 +2,9 @@
   "name": "ar.co-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html src/banner.html src/sticker.html src/facade.html src/cards.html src/styles/main.scss src/scripts/main.js",
+    "build": "parcel build src/index.html src/banner.html src/sticker.html src/facade.html src/cards.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
