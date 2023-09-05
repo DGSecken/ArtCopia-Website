@@ -24,23 +24,6 @@
                 text-align: center;
                 padding-right: 46%;
                 }
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: 44%;
-                left: 47%;
-                right: 0;
-                height: 0.5em;
-                border-top: 4px solid colors.$mainText;
-                z-index: 1;
-                @media (max-width: 767px) {
-                    left: 58%;
-                    }
-                    @media (min-width: 768px) and (max-width: 1024px) {
-                        left: 78%;
-                        }
-    }
         }
     }
     &__card {
