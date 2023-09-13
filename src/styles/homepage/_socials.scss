@@ -13,14 +13,18 @@
 .socials {
         &__title {
         h1 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 72px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 600;
+            font-size: 52px;
             color: colors.$mainText;
             position: relative;
             @media (max-width: 767px) {
-                font-size: 36px;
+                font-size: 6.7vw;
                 text-align: center;
-                padding-right: 46%;
+                }
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 5.3vw;
+                    margin-bottom: 2vh;
                 }
             }
         }

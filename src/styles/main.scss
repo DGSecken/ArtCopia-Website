@@ -44,12 +44,12 @@ body {
     a {
         position: relative;
         color: colors.$mainText;
-        font-size: 58px;
+        font-size: 4vw;
         font-family: 'Bebas Neue', sans-serif;
         text-decoration: none;
         background-color: colors.$mainBg;
         border-radius: 10px;
-        padding: 4px 82px;
+        padding: 0 7vw;
         transition: all ease .3s;
 
         &:hover {
@@ -58,8 +58,12 @@ body {
             }
             
         @media (max-width: 767px) {
-            font-size: 30px;
-            padding: 4px 32px;
+            font-size: 10vw;
+            padding: 0.5vh 14vw;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 10vw;
+            padding: 0.1vh 15vw;
         }
     }
 }
@@ -75,13 +79,13 @@ body {
     padding: 12px 38%;
 
     @media (max-width: 767px) {
-        padding: 12px 95px;
+        padding: 1.5vh 25vw;
         margin-top: 4px;
         margin-bottom: 30px;
     }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        padding: 12px 100px;
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding: 1.5vh 12vw;
         left: 40%;
         margin-bottom: 30px;
     }

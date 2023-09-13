@@ -13,13 +13,21 @@
 .contact {
     &__title {
         h1 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 72px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 600;
+            font-size: 52px;
             color: colors.$mainText;
             position: relative;
 
             @media (max-width: 767px) {
-                font-size: 36px;
+                font-size: 7vw;
+                margin-bottom: 2vh;
+                text-align: center;
+            }
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                font-size: 5.3vw;
+                margin-bottom: 2vh;
             }
         }
     }
@@ -50,13 +58,13 @@
 
                 @media (max-width: 767px) {
                     font-size: 34px;
-                    padding: 8px 40px;
+                    padding: 1vh 10.8vw;
                     margin: 0;
                     border-radius: 20px;
                     }
                     @media (min-width: 768px) and (max-width: 1024px) {
                         font-size: 48px;
-                        padding: 8px 120px;
+                        padding: 1vh 20vw;
                         margin-right: 12px;
                         }
             }
@@ -87,7 +95,10 @@
             width: 80%;
             line-height: 50px;
             margin-right: 80px;
-            padding-left: 8px;
+            background: rgb(230,230,230);
+            background: linear-gradient(270deg, rgba(230,230,230,1) 0%, rgba(246,216,67,1) 90%);
+            padding: 20px;
+            border-radius: 20px;
 
             @media (max-width: 767px) {
                 font-size: 18px;
@@ -111,6 +122,7 @@
         @media (max-width: 1024px) {
             display: flex;
             flex-direction: column;
+            margin-top: 5vw;
             }
             @media (min-width: 768px) and (max-width: 1024px) { 
                 width: 50%;

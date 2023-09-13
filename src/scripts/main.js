@@ -55,12 +55,21 @@ $(document).ready(function() {
     }
 
     function handleCardBlock(buttonSelector, cardSelector, closeButtonSelector) {
-        $(buttonSelector).click(function() {
+        $(buttonSelector).click(function(e) {
             $(cardSelector).fadeIn(100);
+            e.stopPropagation();
             $(closeButtonSelector).click(function() {
                 $(cardSelector).fadeOut(100);
             });
         });
+    }
+
+    function clickAway(card) {
+        $(document).on('click', function(e) {
+            if (!$(card).is(e.target)) {
+                $(card).fadeOut(100);
+            }
+        })
     }
 
     // QUESTION SECTION BUTTONS CONFIGURATION
@@ -90,4 +99,8 @@ $(document).ready(function() {
     handleCard("button.buy-button__cardstotal", ".cardslist__card__total", "button.close-btn-1");
     handleCard("button.buy-button__cardslocal", ".cardslist__card__local", "button.close-btn-2");
     handleCard("button.buy-button__cardsflyer", ".cardslist__card__flyer", "button.close-btn-3");
-    });
+
+        clickAway('.questions__box-1')
+        clickAway('.questions__box-2')
+        clickAway('.questions__box-3')
+});

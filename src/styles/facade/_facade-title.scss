@@ -10,17 +10,19 @@
     &__title {
 
 h1 {
-    margin: 0 auto;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 72px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
     color: colors.$mainText;
     position: relative;
+    margin-bottom: 12px;
 
     @media (max-width: 767px) {
-        font-size: 44px;
+        font-size: 10vw;
+        text-align: center;
     }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
         font-size: 74px;
         margin-bottom: 36px;
         margin-top: 90px;
@@ -38,8 +40,8 @@ h1 {
             text-align: center;
             width: 100%;
             @media (max-width: 767px) {
-                width: 150%;
-                margin-left: -80px;
+                width: 130%;
+                margin-left: -10vw;
             }
         }
 

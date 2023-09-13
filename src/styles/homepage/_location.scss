@@ -14,31 +14,37 @@
 .location {
     &__text {
         h1 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 72px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 600;
+            font-size: 52px;
             color: colors.$mainText;
             position: relative;
             @media (max-width: 767px) {
-                font-size: 42px;
+                font-size: 7vw;
+                margin-bottom: 2vh;
                 text-align: center;
-                padding-right: 46%;
+                }
+
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 5.3vw;
+                    margin-bottom: 2vh;
                 }
         }
     }
 
     &__address {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         background-color: colors.$mainBg;
         border-radius: 36px;
-        padding: 20px;
-        width: 80%;
-        text-align: center;
-        margin-left: 116px;
+        padding: 20px 0;
         @media (max-width: 767px) {
             width: 120%;
             padding: 14px;
             margin-left: -22px;
             }
-            @media (min-width: 768px) and (max-width: 1024px) {
+            @media (min-width: 768px) and (max-width: 1023px) {
                 width: 100%;
                 margin: 0;
                 }
@@ -74,7 +80,6 @@
     }
 
     &__local-services {
-        padding-top: 18px;
         display: flex;
         line-height: 44px;
         

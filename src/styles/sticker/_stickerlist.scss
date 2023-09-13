@@ -1,9 +1,5 @@
 @use '../variables/colors';
 
-#stickerlist {
-    overflow-x: hidden;
-}
-
 .container.container__stickerlist {
     width: 80%;
 }
@@ -17,19 +13,23 @@
         }
 
     h1 {
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 72px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        font-size: 52px;
         color: colors.$mainText;
         position: relative;
 
         @media (max-width: 767px) {
-            font-size: 44px;
+            font-size: 10vw;
+            text-align: center;
+            margin-bottom: 2.5vh;
         }
 
-        @media (min-width: 768px) and (max-width: 1024px) {
-            font-size: 74px;
-            margin-bottom: 36px;
-            margin-top: 90px;
+        @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 8vw;
+            text-align: center;
+            margin-top: 3vh;
+            margin-bottom: 1.5vh;
         }
         }
     }
@@ -37,14 +37,6 @@
 
 .stickerlist {
     &__list {
-        @media (max-width: 767px) {
-            margin-left: 25%;
-        }
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-            margin-left: 8%;
-        }
-
         .row {
         gap: 124px;
         text-align: center;
@@ -52,14 +44,14 @@
         margin-bottom: 5%;
         
         @media (max-width: 767px) {
-            gap: 100%;
-            margin-left: 23%;
+            justify-content: center;
+            margin: 0;
+            gap: 6vw;
             }
 
-        @media (min-width: 768px) and (max-width: 1024px) {
-            margin-left: 5%;
-            gap: 35%;
-            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+                gap: 40%;
+                }
         }
 
         .col-3 {
@@ -67,28 +59,29 @@
             flex-direction: column;
             align-items: center;
 
+            @media (max-width: 767px) {
+                width: 100%;
+                }
+
             h1 {
                 text-align: center;
                 font-size: 22px;
                 font-weight: bold;
                 margin-top: 12px;
+                width: 105%;
 
                 @media (max-width: 767px) {
-                    text-align: center;
-                    width: 200px;
+                    font-size: 6vw;
+                    width: 100%;
+                    }
                 }
-        
+                img {
+                    @media (max-width: 767px) {
+                        width: 50vw;
+                }
                 @media (min-width: 768px) and (max-width: 1024px) {
-                    text-align: center;
-                    width: 200px;
+                    width: 35vw;
                 }
-            }
-
-            img {
-            @media (max-width: 767px) {
-                width: 200px;
-            }
-
             }
         }
     }
@@ -98,116 +91,133 @@
         justify-content: center;
         text-align: center;
 
-        .budget-button {
-            top: 20px;
-            @media (max-width: 767px) {
-                top: 12px;
-            }
-        }
-
         h1 {
-            font-size: 30px;
+            font-size: 2.25vw;
             font-weight: bold;
             margin-bottom: 30px;
-
             @media (max-width: 767px) {
-                font-size: 18px;
-                margin-top: 30px;
-            }
+                font-size: 5vw;
+                margin-bottom: 2vh;
+                margin-top: 2vh;
+                }
 
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 6.6vw;
+                }
         }
 
         p {
-            font-size: 18px;
-            line-height: 16px;
+            font-size: 1.2vw;
+            line-height: 2vh;
 
             @media (max-width: 767px) {
-                font-size: 12px;
-                line-height: 12px;
-            }
-        }
+                font-size: 3.7vw;
+                line-height: 2.5vh;
+                }
 
-        img {
-            margin-top: 4px;
-            margin-bottom: 30px;
-
-            @media (max-width: 767px) {
-                display: flex;
-                margin-left: 17%;
-                margin-top: 30px;
-            }
-            @media (min-width: 768px) and (max-width: 1024px) {
-                margin-left: 0;
-            }
-        }
-
-        ul {
-            list-style: none;
-            margin-right: 40px;
-            @media (max-width: 767px) {
-                padding: 0;
-                margin-left: 32px;
-            }
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 3vw;
+                    line-height: 2vh;
+                    margin-bottom: 2.5vh;
+                }
         }
 
         .item-price {
-            margin-top: 20px;
             font-size: 62px;
             margin-bottom: 10px;
 
             @media (max-width: 767px) {
-                font-size: 38px;
-                margin-top: 4px;
-            }
+                font-size: 13vw;
+                margin-top: 0;
+                }
+
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 10vw;
+                }
         }
+
+        .budget-button {
+            top: 20px;
+            padding: 0.5vh 4.5vw;
+            font-size: 3.5vw;
+
+            @media (max-width: 767px) {
+                font-size: 10vw;
+                padding: 1vh 8vw;
+                }
+
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    padding: 1vh 15vw;
+                    font-size: 7vw;
+                }
+        }  
 
             &__a4-sticker,
             &__cut-sticker,
             &__lg-sticker,
             &__vehicle-sticker,
             &__perf-sticker,
-            &__fridge-sticker{
-            position: fixed;
-            top: 3vh;
-            padding: 36px 48px;
-            display: none;
-            text-align: center;
-            background-color: colors.$secText;
-            border-radius: 20px;
-            box-shadow: 0 1px 120px 2px colors.$mainText;
-            z-index: 1;
+            &__fridge-sticker {
+                display: none;
+                position: fixed;
+                width: 50vw;
+                height: 85vh;
+                top: 4vh;
+                background-color: colors.$secText;
+                border-radius: 20px;
+                box-shadow: 0 1px 120px 2px colors.$mainText;
+                z-index: 1;
 
-            @media (max-width: 767px) {
-                padding: 10px 0;
-                top: 6vh;
-            }
-            @media (min-width: 768px) and (max-width: 1024px) {
-                top: 8vh;
+                @media (max-width: 767px) {
+                    width: 94vw;
+                    top: 6vh;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        width: 90vw;
+                    }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    padding: 0;
+                    list-style: none;
+                }
+    
+                img {
+                    width: 13vw;
+                    margin-bottom: 1vw;
+
+                    @media (max-width: 767px) {
+                        width: 30vw;
+                        margin-top: 1vh;
+                        }
+
+                        @media (min-width: 768px) and (max-width: 1023px) {
+                            width: 25vw;
+                            margin-bottom: 6vw;
+                        }
+                }
+
+                .close-btn-1,
+                .close-btn-2,
+                .close-btn-3,
+                .close-btn-4,
+                .close-btn-5,
+                .close-btn-6 {
+                    position: absolute;
+                    font-size: 4vh;
+                    width: 10vh;
+                    top: 18px;
+                    border: none;
+                    background: none;
+                    &:hover {
+                        color: #c00404;
+                    }
+                }
             }
         }
     }
-}
-
-.close-btn-1,
-.close-btn-2,
-.close-btn-3,
-.close-btn-4,
-.close-btn-5,
-.close-btn-6 {
-    position: absolute;
-    top: 28px;
-    font-size: 32px;
-    background: none;
-    outline: none;
-    border: none;
-
-    @media (max-width: 767px) {
-        font-size: 28px;
-        left: 14px;
-        top: 8px;
-    }
-
-    &:hover {
-        color: #c00404;
-    }
-}
