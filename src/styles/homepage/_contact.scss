@@ -106,12 +106,14 @@
                 text-align: center;
                 width: 120%;
                 margin-right: 0;
+                background: linear-gradient(360deg, rgba(230,230,230,1) 0%, rgba(246,216,67,1) 90%);
                 }
                 @media (min-width: 768px) and (max-width: 1024px) {
                     font-size: 26px;
                     line-height: 42px;
                     text-align: center;
                     margin-left: 62px;
+                    background: linear-gradient(360deg, rgba(230,230,230,1) 0%, rgba(246,216,67,1) 90%);
                     }
         }
         &__img {

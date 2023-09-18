@@ -2,20 +2,19 @@
 
 #cardslist {
     padding: 48px;
-}
 
-.container__cardslist {
-    max-width: 1300px;
-    width: 100%;
-    margin-top: 24px;
-    margin-bottom: 40px;
+    @media (max-width: 767px) {
+        padding-bottom: 4vh;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding-bottom: 5vh;
+        }
 }
 
 .cardslist {
 
     &__title {
-        margin-top: 2%;
-
         h1 {
             font-family: 'Work Sans', sans-serif;
             font-weight: 700;
@@ -89,38 +88,41 @@
 }
 
     &__card {
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        margin: auto;
+        max-width: 38vw;
 
         h1 {
-            font-size: 32px;
+            font-size: 2.25vw;
             font-weight: bold;
-            margin-top: 24px;
-            margin-bottom: 16px;
+            text-align: center;
+            margin-bottom: 3vh;
 
             @media (max-width: 767px) {
-                font-size: 3.5vh;
-                margin-bottom: 2vh;
-            }
-            @media (min-width: 768px) and (max-width: 1023px) {
                 font-size: 5vw;
-            }
+                margin-bottom: 2vh;
+                margin-top: 2vh;
+                }
+
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 6.6vw;
+                }
         }
 
         p {
-            font-size: 18px;
-            line-height: 14px;
+            font-size: 1.2vw;
+            line-height: 2vh;
+            padding: 0 22px;
+            margin-bottom: 2.5vh;
 
             @media (max-width: 767px) {
-                font-size: 3.5vw;
-                line-height: 2vh;
-            }
-            @media (min-width: 768px) and (max-width: 1023px) {
                 font-size: 3vw;
-                line-height: 2vh;
-                margin-bottom: 1.5vh;
-            }
+                line-height: 2.5vh;
+                }
+
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 3vw;
+                    line-height: 2vh;
+                }
         }
 
         .linebreak-text {
@@ -132,18 +134,17 @@
         }
 
         .item-price {
-            margin-top: 1vh;
-            font-size: 3.5vw;
-            margin-bottom: 0.1vh;
+            font-size: 3vw;
+            margin: 1vh;
 
             @media (max-width: 767px) {
                 font-size: 8vw;
                 margin-top: 0;
-                margin-bottom: 1.5vh;
-            }
-            @media (min-width: 768px) and (max-width: 1023px) {
-                font-size: 8vw;
-            }
+                }
+
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    font-size: 6vw;
+                }
         }
 
         &__total,
@@ -151,74 +152,82 @@
         &__flyer {
             display: none;
             position: fixed;
-            width: 50vw;
-            height: 85vh;
+            align-items: center;
+            flex-direction: column;
             top: 4vh;
-            text-align: center;
             background-color: colors.$secText;
-            border-radius: 20px;
+            border-radius: 4px;
             box-shadow: 0 1px 120px 2px colors.$mainText;
             z-index: 1;
 
-            @media (max-width: 767px) {
-                width: 50vh;
-                top: 7vh;
-            }
-            @media (min-width: 768px) and (max-width: 1023px) {
-                width: 90vw;
+            @media (max-width: 449px) {
+                left: 0;
             }
 
+            @media (min-width: 450px) and (max-width: 767px) {
+                top: 10vh;
+                left: 7.5vw;
+                }
 
-            ul {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto;
-                padding: 0;
-                list-style: none;
-            }
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    top: 8vh;
+                    left: 8.5vw;
+                }
 
             img {
-                width: 12vw;
+                width: 80%;
+                margin-bottom: 1vw;
+                margin-top: 5vh;
 
                 @media (max-width: 767px) {
-                    width: 30vw;
-                    margin-top: 0vh;
-                }
-                @media (min-width: 768px) and (max-width: 1023px) {
-                    width: 30vw;
-                }
+                    margin-top: 8vh;
+                    width: 85%;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        margin-bottom: 6vw;
+                    }
             }
 
-            .budget-button {
-                top: 5vh;
+            .button {
+                width: 100%;
+                text-align: center;
+                padding: 2vh 0;
+                font-size: 2vw;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                background-color: rgb(226, 193, 45);
+                text-decoration: none;
+
+                &:hover {
+                    transition: all ease .2s;
+                    background-color: rgb(194, 174, 0);
+                }
+
                 @media (max-width: 767px) {
-                    top: 4vh;
-                    font-size: 10vw;
-                    padding: 1vh 8vw;
+                    font-size: 4vw;
                     }
+
                     @media (min-width: 768px) and (max-width: 1023px) {
-                        padding: 1vh 15vw;
-                        font-size: 7vw;
+                        font-size: 3.3vw;
                     }
-                }  
+                }
             }
         .close-btn-1,
         .close-btn-2,
         .close-btn-3 {
             position: absolute;
-            font-size: 4vh;
-            width: 10vh;
-            top: 18px;
+            font-size: 3vh;
+            left: 1vw;
+            top: 1vh;
             border: none;
             background: none;
             &:hover {
                 color: #c00404;
             }
 
-            @media (max-width: 767px) {
-                font-size: 3.5vh;
+            @media (max-width: 1023px) {
+                left: 2vw;
             }
         }
     }
@@ -229,8 +238,8 @@
 }
 .amount,
 .size {
-    width: 10vw;
-    margin-top: 1vh;
+    width: 12vw;
+    margin-top: 0vh;
     padding: .2vh .2vw;
     outline: 0;
     border: 0;

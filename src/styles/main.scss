@@ -11,6 +11,7 @@
 
 @use 'banner/banner-header';
 @use 'banner/bannerlist';
+@use 'banner/banner-footer';
 
 @use 'sticker/sticker-header';
 @use 'sticker/stickerlist';
@@ -23,6 +24,7 @@
 
 @use 'cards/cards-header';
 @use 'cards/cardslist';
+@use 'cards/cards-footer';
 
 * {
     margin: 0;
@@ -30,8 +32,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body {
+body, html {
     background-color: rgb(241, 241, 241);
+    height: 100%;
 }
 
 .container {
