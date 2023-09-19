@@ -147,7 +147,7 @@
                 position: fixed;
                 align-items: center;
                 flex-direction: column;
-                top: 12vh;
+                top: 10vh;
                 background-color: colors.$secText;
                 border-radius: 4px;
                 box-shadow: 0 1px 120px 2px colors.$mainText;
@@ -227,6 +227,11 @@
                         left: 2vw;
                     }
                 }
+            }
+            &__vehicle-sticker,
+            &__perf-sticker,
+            &__fridge-sticker {
+                top: 8vh;
             }
         }
     }
