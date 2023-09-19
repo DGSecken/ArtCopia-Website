@@ -147,10 +147,12 @@
                 position: fixed;
                 align-items: center;
                 flex-direction: column;
-                top: 10vh;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 background-color: colors.$secText;
                 border-radius: 4px;
-                box-shadow: 0 1px 120px 2px colors.$mainText;
+                box-shadow: 0 1px 50px 2px colors.$mainText;
                 z-index: 1;
                 
 
@@ -190,12 +192,12 @@
                     font-size: 2vw;
                     color: rgb(255, 255, 255);
                     font-weight: bold;
-                    background-color: rgb(226, 193, 45);
+                    background-color: colors.$btnColor;
                     text-decoration: none;
 
                     &:hover {
                         transition: all ease .2s;
-                        background-color: rgb(194, 174, 0);
+                        background-color: colors.$btnHoverColor;
                     }
 
                     @media (max-width: 767px) {
@@ -227,11 +229,6 @@
                         left: 2vw;
                     }
                 }
-            }
-            &__vehicle-sticker,
-            &__perf-sticker,
-            &__fridge-sticker {
-                top: 8vh;
             }
         }
     }

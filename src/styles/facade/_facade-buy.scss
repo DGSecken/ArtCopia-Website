@@ -74,44 +74,78 @@
             margin-bottom: 36px;
         }
     }
-    .wpp-button {
-        position: relative;
+
+    &__button {
         display: flex;
         justify-content: center;
-        margin-top: 64px;
-        
-        @media (max-width: 767px) {
-            margin-top: 32px;
+    }
+}
+
+.animated-facadebutton {
+
+    @media (max-width: 1023px) {
+        position: relative;
+        font-size: 5vw;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: #ffac24;
+        color: colors.$secText;
+        padding: 1rem 4.5vw;
+        text-align: center;
+        border-radius: 3px;
+        margin-top: 4vh;
+
+        &::before {
+            content: '\f232';
+            font-size: 5vw;
+            font-family: "Font Awesome 6 brands";
+            margin-right: 3.5vw;
+            padding: 0vw;
+            color: colors.$secText;
         }
+    }
 
-        a {
-            width: 85%;
-            text-align: center;
-            line-height: 104px;
-            font-size: 78px;
-            border-radius: 42px;
+    @media (min-width: 1024px ) {
+    background: #ffac24;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 3.5vw;
+    padding: 1rem 3vw;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    position: relative;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0 auto;
+    top: 6vh;
 
-            @media (max-width: 767px) {
-                font-size: 32px;
-                line-height: 48px;
-                width: 100%;
-            }
-            @media (min-width: 768px) and (max-width: 1023px) {
-                font-size: 8vw;
+    &::after {
+        content: '\f232';
+        font-family: "Font Awesome 6 brands"; 
+        color: colors.$secText;
+        position: absolute;
+        left: 41vw;
+        top: 14.5%;
+        right: 5%;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    &:hover {
+        background: #16c72def;
+        color: colors.$secText;
+        transition: all 0.3s;
+        border-radius: 10px;
+        box-shadow: 0px 6px 15px #0000ff61;
+        padding: 1rem 6.5rem 1rem 1rem;
+
+        &::after {
+            opacity: 1;
+            transition: all 0.25s;
+            padding: 0rem 4.5rem 0rem 0rem;
             }
         }
-        img {
-                position: absolute;
-                display: flex;
-                left: 6%;
-                margin-top: -8px;
-                width: 132px;
-                z-index: 1;
-                pointer-events: none;
-
-                @media (max-width: 1024px) {
-                    display: none;
-                    }
-                }
     }
 }

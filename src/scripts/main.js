@@ -1,43 +1,5 @@
 $(document).ready(function() {
 
-    // CARDS SECTION OPTIONS
-
-    $("#amount-total").on('change', function() {
-        const selectedOption = $(this).val();
-
-        if (selectedOption === 'total-500') {
-            $('#finalprice-total').text("R$140,00");
-        } else if (selectedOption === 'total-1000') {
-            $('#finalprice-total').text("R$180,00")
-        } else if (selectedOption === 'total-2000') {
-            $('#finalprice-total').text("R$220,00")
-        } else if (selectedOption === 'total-3000') {
-            $('#finalprice-total').text("R$270,00")
-        } else if (selectedOption === 'total-5000') {
-            $('#finalprice-total').text("R$400,00")
-        }
-    });
-
-    $("#amount-local").on('change', function() {
-        const selectedOption = $(this).val();
-
-        if (selectedOption === 'local-500') {
-            $('#finalprice-local').text("R$160,00");
-        } else if (selectedOption === 'local-1000') {
-            $('#finalprice-local').text("R$200,00")
-        } else if (selectedOption === 'local-2000') {
-            $('#finalprice-local').text("R$220,00")
-        } else if (selectedOption === 'local-3000') {
-            $('#finalprice-local').text("R$270,00")
-        } else if (selectedOption === 'local-5000') {
-            $('#finalprice-local').text("R$400,00")
-        } 
-    });
-
-    
-    // DROPDOWN MENU
-
-
     // CARD HANDLER PATTERNS
 
     $("button.dropdown-btn").click(function() {
