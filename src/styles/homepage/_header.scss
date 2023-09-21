@@ -2,7 +2,7 @@
 @use '../variables/colors';
 
 header {
-    padding: 12px 0 ;
+    padding: 1vh 0 ;
     background-color: colors.$mainBg;
     
     @media (max-width: 768px) {
@@ -14,7 +14,7 @@ header {
     display: flex;
     align-items: center;
     img {
-        width: 122px;
+        width: 6vw;
 
         @media (max-width: 767px) {
             width: 80px;
@@ -22,7 +22,7 @@ header {
         }
     }
     p {
-        font-size: 36px;
+        font-size: 2vw;
         font-family: 'Bebas Neue', sans-serif;
         margin-bottom: 0;
         margin-top: 8px;
