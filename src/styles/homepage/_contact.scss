@@ -121,7 +121,7 @@
         cursor: pointer;
         font-weight: 500;
         font-size: 3vw;
-        padding: 1rem 5vw;
+        padding: 2vh 4vw;
         border: 0;
         transition: all ease 0.5s;
         border-radius: 10px;
@@ -138,7 +138,7 @@
         font-size: 4vw;
         position: absolute;
         left: 29.5vw;
-        top: 0.2vh;
+        top: 0.6vh;
         right: 5%;
         bottom: 0;
         opacity: 0;
@@ -150,12 +150,12 @@
         transition: all ease 0.3s;
         border-radius: 10px;
         box-shadow: 0px 6px 15px #16c72e9f;
-        padding: 1rem 8vw 1rem 3rem;
+        padding: 2vh 8vw 2vh 2.5vw;
 
         &::after {
             opacity: 1;
             transition: all ease 0.25s;
-            padding: 0rem 6vw 0rem 0rem;
+            padding: 0 0 0 0;
             }
         }
     }
