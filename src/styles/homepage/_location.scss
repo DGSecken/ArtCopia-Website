@@ -54,7 +54,7 @@
         margin-top: 4px;
         font-size: 22px;
         @media (max-width: 767px) {
-            font-size: 12px;
+            font-size: 3vw;
             }
 
             i {
@@ -91,6 +91,7 @@
             margin-top: 5%;
             margin-bottom: 5%;
             align-items: center;
+            padding: 0;
             @media (max-width: 1024px) {
                 margin-top: 0;
                 }
@@ -102,11 +103,11 @@
             width: 120%;
 
             @media (max-width: 767px) {
-                width: 140%;
                 font-size: 18px;
                 line-height: 32px;
-                margin-left: -5%;
-                overflow-x: hidden;
+                width: 130%;
+                margin-left: -10vw;
+                text-align: center;
                 }
                 @media (min-width: 768px) and (max-width: 1024px) { 
                     line-height: 44px;

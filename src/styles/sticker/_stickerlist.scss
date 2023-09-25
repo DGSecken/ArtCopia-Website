@@ -113,8 +113,9 @@
             margin-bottom: 2.5vh;
 
             @media (max-width: 767px) {
-                font-size: 3vw;
+                font-size: 4.5vw;
                 line-height: 2.5vh;
+                text-align: center;
                 }
 
                 @media (min-width: 768px) and (max-width: 1023px) {
@@ -154,20 +155,13 @@
                 border-radius: 4px;
                 box-shadow: 0 1px 50px 2px colors.$mainText;
                 z-index: 1;
-                
 
-                @media (max-width: 449px) {
-                    left: 0;
-                }
-
-                @media (min-width: 450px) and (max-width: 767px) {
-                    top: 10vh;
-                    left: 7.5vw;
+                @media (max-width: 767px) {
+                    width: 100%;
                     }
 
                     @media (min-width: 768px) and (max-width: 1023px) {
-                        top: 12vh;
-                        left: 8.5vw;
+                        width: 90%;
                     }
 
                 img {
@@ -201,7 +195,7 @@
                     }
 
                     @media (max-width: 767px) {
-                        font-size: 4vw;
+                        font-size: 6vw;
                         }
 
                         @media (min-width: 768px) and (max-width: 1023px) {

@@ -8,38 +8,29 @@
 .carousel {
     
     &-inner {
-    display: flex;
-    text-align: center;
+        display: flex;
     }
 
         &-item {
             img {
         min-width: 100%;
-
-        @media (max-width: 1600px) {
-        max-width: 50%;
             }
         }
     }
 
-    }
-.fa-chevron-left,
-.fa-chevron-right {
-    font-size: 36px;
-    color: colors.$mainText;
-    opacity: 70%;
-}
-
 .carousel-control-prev,
 .carousel-control-next {
+    font-size: 2vw;
+    color: colors.$secText;
+    opacity: 100%;
     transition: all ease .2s;
+    
     @media (max-width: 1023px) {
         visibility: hidden;
     }
     @media (min-width: 1024px) {
         &:hover {
             color: colors.$mainText;
-            
         }
     }
 }
