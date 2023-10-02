@@ -1,0 +1,23 @@
+@use '../variables/colors';
+
+.popular-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    gap: 2.5vh;
+
+    &__lg {
+        img {
+        width: 55vw;
+        }
+    }
+
+    &__sm {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        img {
+            width: 28vw;
+        }
+    }
+}
